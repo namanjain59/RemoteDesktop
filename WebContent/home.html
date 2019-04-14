@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Remote Desktop</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <script type="text/javascript" src="js/bootstrap.min.js" ></script>
+    <script src="js/jquery.min.js"></script> 
+</head>
+<body>
+<div class="jumbotron">
+      <div class="container">
+        <h1 align="center">Remote Desktop</h1>
+      </div>
+</div>
+
+
+<div class="row">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-8">
+<label><h3>Create Server</h3></label> <br>
+Create a server to see other screens: <br><br>
+<form action="serverInitialize" method="POST" >
+<input type="text" class="form-control input-md" name="pot" required="true" placeholder="Enter the port">
+<br>
+<button type="submit" class="btn btn-primary">Create</button>
+</form>
+<br>
+<label><h3>Join server:</h3></label> <br>
+Make your screen visible to someone else: <br><br>
+<form action="clientInitialize" method="POST" >
+<input type="text" class="form-control input-md" required="true" name="ip" placeholder="Enter IP address to connect">
+<input type="text" class="form-control input-md" required="true" name="port" placeholder="Enter the port">
+<br>
+<button type="submit" class="btn btn-primary">Connect</button>
+</form>
+</div>
+</div>
+<br><br><br><br>
+
+</body>
+</html>
